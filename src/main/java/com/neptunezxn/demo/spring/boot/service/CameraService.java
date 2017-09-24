@@ -23,6 +23,11 @@ public class CameraService {
         cameraRepository.save(camera);
     }
 
+    public void addCamera(Camera camera) {
+        camera.setCreated(Date.valueOf(LocalDate.now()));
+        cameraRepository.save(camera);
+    }
+
     public List<Camera> findAllCameras() {
         List<Camera> result = new ArrayList<>();
         cameraRepository.findAll().iterator().forEachRemaining(result::add);
