@@ -1,16 +1,16 @@
 $(document).ready(function() {
-    $("#add-camera-submit").click(function() {
+    $("#add-car-submit").click(function() {
 
-        var cameraAddForm = {}
-        cameraAddForm["name"] = $("#camera-name-input").val();
-        cameraAddForm["description"] = $("#camera-description-input").val();
-        cameraAddForm["brand"] = $("#camera-brand-select").val();
+        var carAddForm = {}
+        carAddForm["model"] = $("#car-model-input").val();
+        carAddForm["description"] = $("#car-description-input").val();
+        carAddForm["carMake"] = $("#car-make-select").val();
 
          $.ajax({
          type : "POST",
          		contentType : "application/json",
-         		url : "/camera/add",
-         		data : JSON.stringify(cameraAddForm),
+         		url : "/car/add",
+         		data : JSON.stringify(carAddForm),
          		dataType : 'json',
          		timeout : 100000,
          		success : function(data) {

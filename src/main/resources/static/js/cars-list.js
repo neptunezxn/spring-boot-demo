@@ -1,14 +1,14 @@
 $(document).ready(function() {
-    $('#cameras-table').DataTable( {
+    $('#cars-table').DataTable( {
         "ajax": {
-            "url": '/camera/list',
+            "url": '/car/list',
             "dataType": "json",
             "dataSrc": ""
         },
         "aoColumns": [
             { "mDataProp": "id" },
-            { "mDataProp": "brand" },
-            { "mDataProp": "name" },
+            { "mDataProp": "carMake" },
+            { "mDataProp": "model" },
             { "mDataProp": "description" },
             { "mDataProp": "created" }
         ]
