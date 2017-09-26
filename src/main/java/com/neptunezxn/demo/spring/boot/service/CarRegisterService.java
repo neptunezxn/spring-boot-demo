@@ -6,10 +6,12 @@ import org.slf4j.LoggerFactory;
 import org.springframework.integration.annotation.ServiceActivator;
 import org.springframework.stereotype.Component;
 
+import java.lang.invoke.MethodHandles;
+
 @Component
 public class CarRegisterService {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(CarRegisterService.class);
+    private static Logger LOGGER = LoggerFactory.getLogger(MethodHandles.lookup().lookupClass().getName());
 
     @ServiceActivator
     public void register(Car car) {

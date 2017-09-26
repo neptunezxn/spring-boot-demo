@@ -26,6 +26,12 @@ public class CarController {
         return carService.getAllCars();
     }
 
+    @GetMapping("/description/{description}")
+    public @ResponseBody List<Car> findDescription(@PathVariable String description) {
+        return carService.getCar(description);
+    }
+
+
     @PostMapping("/add")
     public String addCar(@RequestBody Car car) throws JMSException {
         carService.addCar(car);
