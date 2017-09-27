@@ -4,7 +4,7 @@
 
 * Spring Boot
 * Spring MVC
-* Spring Data/JPA
+* Spring Data JPA
 * Spring Integration with ActiveMQ
 * JQuery AJAX calls
 
