@@ -5,12 +5,12 @@ $(document).ready(function() {
             "dataType": "json",
             "dataSrc": ""
         },
-        "aoColumns": [
-            { "mDataProp": "id" },
-            { "mDataProp": "carMake" },
-            { "mDataProp": "model" },
-            { "mDataProp": "description" },
-            { "mDataProp": "created" }
+        "columns": [
+            { data : "id" },
+            { data : "carMake" },
+            { data : "model" },
+            { data : "description" },
+            { data : "created" }
         ]
     });
 });
